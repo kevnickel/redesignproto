@@ -1,0 +1,6 @@
+<select [(ngModel)]="selectedProcedure">
+  <option *ngFor="let pc of procedureCategories" [ngValue]="pc">{{pc.name}}</option>
+</select>
+
+<svg width="960" height="600"></svg>
+<qual-heatmap [state]="hoveredState"></qual-heatmap>
